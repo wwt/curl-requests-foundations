@@ -1,2 +1,2 @@
-# REST API Foundations Hands-On Walkthrough
+# cURL & Python Requests Foundations Hands-On Walkthrough
 // TODO
