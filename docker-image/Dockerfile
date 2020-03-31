@@ -2,9 +2,9 @@
 FROM python:3.8-alpine
 
 RUN apk add curl && \
-    mkdir /development
+    mkdir /code
 
-WORKDIR /development
+WORKDIR /code
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
