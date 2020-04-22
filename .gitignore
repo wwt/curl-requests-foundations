@@ -1,3 +1,6 @@
+# Cookie files
+.cookie_jar
+
 # Local folders (starting with _)
 _*
 
