@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Create environment variables for DNAC authentication
 export DNAC_USER=devnetuser
 export DNAC_PW=Cisco123!
