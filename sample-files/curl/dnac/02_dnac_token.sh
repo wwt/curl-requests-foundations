@@ -1,3 +1,3 @@
 #!/bin/sh
-# export DNAC_TOKEN=token_id # copy/paste the token from the response
-DNAC_TOKEN=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTlkYmI3NzdjZDQ3ZTAwNGM2N2RkMGUiLCJhdXRoU291cmNlIjoiaW50ZXJuYWwiLCJ0ZW5hbnROYW1lIjoiVE5UMCIsInJvbGVzIjpbIjVkYzQ0NGQ1MTQ4NWM1MDA0YzBmYjIxMiJdLCJ0ZW5hbnRJZCI6IjVkYzQ0NGQzMTQ4NWM1MDA0YzBmYjIwYiIsImV4cCI6MTU4NzU4Mjk2NiwidXNlcm5hbWUiOiJkZXZuZXR1c2VyIn0.IZ2OgrYCT5zbA8_vVy0bmLF9rT5JOX5B2tKeNOfLul0
+# Copy the token from the response and paste it into the following command, in place of the _______ characters
+# echo export DNAC_TOKEN=_______ >> 02_dnac_token.sh
