@@ -2,12 +2,14 @@
 
 # Step 1 - Get a list of your Webex Teams Rooms with the token
 import requests, os
+from pprint import pprint
 token = os.getenv('WEBEX_TOKEN')
 headers = {'Content-Type':'application/json','Authorization':f'Bearer {token}'}
 get_url = 'https://api.ciscospark.com/v1/rooms'
 get_response = requests.get(get_url, headers=headers)
-get_response.json() # display all rooms
-get_response.json()['items'][0] # display the first room in the response
+pprint(get_response.json()) # display all rooms
+print() # blank line between output
+pprint(get_response.json()['items'][0]) # display the first room in the response
 
 # Step 2 - Create a new Webex Teams Room
 new_room = {'title':'New Python Room'}
