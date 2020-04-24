@@ -16,11 +16,11 @@ new_room = {'title':'New Python Room'}
 post_url = 'https://api.ciscospark.com/v1/rooms'
 post_response = requests.post(post_url, headers=headers, json=new_room)
 print(f'{post_response.status_code} {post_response.reason}')
-print(post_response.json())
+pprint(post_response.json())
 
 # Step 3 - Post a message to the new Webex Teams Room
 new_msg = {'roomId':post_response.json()['id'],'text':'Hello from Python'}
 msg_url = 'https://api.ciscospark.com/v1/messages'
 msg_response = requests.post(msg_url, headers=headers, json=new_msg)
 print(f'{msg_response.status_code} {msg_response.reason}')
-print(msg_response.json())
+pprint(msg_response.json())
