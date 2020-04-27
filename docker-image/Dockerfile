@@ -15,7 +15,7 @@ LABEL \
     maintainer='Tim Hull <tim.hull@wwt.com>' \
     version='1.0'
 
-ENV MERAKI_API_KEY="6bec40cf957de430a6f1f2baa056b99a4fac9ea0" \
+ENV MERAKI_TOKEN="6bec40cf957de430a6f1f2baa056b99a4fac9ea0" \
     DNAC_USER="devnetuser" \
     DNAC_PW="Cisco123!"
 
