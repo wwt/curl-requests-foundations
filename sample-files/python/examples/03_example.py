@@ -27,7 +27,7 @@ print(f'{response.headers}\n{response.text}')
 # Step 4
 from pprint import pprint
 req_url = 'https://api.meraki.com/api/v0/organizations'
-req_headers = {'X-Cisco-Meraki-API-Key':os.getenv('MERAKI_API_KEY')}
+req_headers = {'X-Cisco-Meraki-API-Key':os.getenv('MERAKI_TOKEN')}
 response = requests.get(req_url, headers=req_headers)
 print(f'{response.status_code} {response.reason}\n')
 pprint(response.json())
