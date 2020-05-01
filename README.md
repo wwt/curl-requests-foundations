@@ -1,6 +1,4 @@
 # cURL & Python Requests Foundations Hands-On Walkthrough
-# Docker Foundations Hands-On Walkthrough
-
 Get ready to learn how to use **cURL** and **Python Requests** to work with REST APIs!  Even if you are new to either cURL or Python Requests, this walkthrough will help you learn the syntax for both tools and get you comfortable with REST API calls to several Cisco platforms, including:
 
 - ACI
@@ -36,7 +34,7 @@ To use this repo:
    - The [***docker-image***](https://github.com/wwt/curl-requests-foundations/tree/master/docker-image "docker-image") folder contains:
      - A copy of the Dockerfile for the Docker Image which you use in the walkthrough (***Dockerfile***)
      - A text file which lists the Python packages in the Docker Image (***requirements.txt***)
-   - The [***sample-files***](https://github.com/wwt/curl-requests-foundations/tree/master/sample-files "docker-compose") folder contains:
+   - The [***sample-files***](https://github.com/wwt/curl-requests-foundations/tree/master/sample-files "sample-files") folder contains:
      - All of the shell scripts and Python code in the PowerPoint slides.
      - There are **curl** and **python** subdirectories.
      - Each of those contain subdirectories for each section of the presentation (examples, ACI, DNAC, etc.)
