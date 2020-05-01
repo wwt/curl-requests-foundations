@@ -31,11 +31,17 @@ To use this repo:
    - The hands-on sections lists all of the cURL and Python commands you need to follow along with each task plus screen recordings which demonstrate each task.
    - I include my presenter notes on every slide and if you have a second monitor you can click through the slide show and read the script concurrently.
 3. Install Docker Desktop:
+   
    - [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 4. Use this command in your terminal shell to create a Docker Container for the hands-on activities.
-   - ```shell
-     docker container run -itv ~/code:/code --name curl-pyreq1 wwt01/curl-pyreq
-     ```
+   ```shell
+   # Create and switch to a local directory to mount to the Docker Container
+   mkdir ~/code && cd ~/code # macOS/Linux
+   mkdir ~/code; cd ~/code # Windows Powershell
+   
+   # Run the Docker Container
+   docker container run -itv ~/code:/code --name curl-pyreq1 wwt01/curl-pyreq
+   ```
 5. The repo includes subfolders which contain reference files and scripts for the hands-on portion of the slide show.
    - The [***docker-image***](https://github.com/wwt/curl-requests-foundations/tree/master/docker-image "docker-image") folder contains:
      - A copy of the Dockerfile for the Docker Image which you use in the walkthrough (***Dockerfile***).
