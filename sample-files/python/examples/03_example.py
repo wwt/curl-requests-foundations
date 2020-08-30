@@ -18,9 +18,10 @@ print(response.text)
 
 # Step 3
 import os
+requests.packages.urllib3.disable_warnings()
 req_url = 'https://sandboxdnac.cisco.com/dna/system/api/v1/auth/token'
 req_auth = (os.getenv('DNAC_USER'), os.getenv('DNAC_PW'))
-response = requests.post(req_url, auth=req_auth)
+response = requests.post(req_url, auth=req_auth, verify=False)
 print(f'{response.status_code} {response.reason}\n')
 print(f'{response.headers}\n{response.text}')
 
