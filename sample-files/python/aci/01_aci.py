@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 # Step 1 - Authenticate & retreive a session token
 import requests

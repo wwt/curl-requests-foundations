@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 # Step 1 - Get a list of Meraki organizations with the API token
 import requests, os
