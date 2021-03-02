@@ -25,7 +25,7 @@ To use this repo:
      - HTTP - `git clone https://github.com/wwt/curl-requests-foundations.git`
      - SSH - `git clone git@github.com:wwt/curl-requests-foundations.git `
    - If you don't know how to use Git, you can download the repo files at:
-     - [https://github.com/wwt/curl-requests-foundations/archive/master.zip]()
+     - [https://github.com/wwt/curl-requests-foundations/archive/main.zip]()
 2. Open the PowerPoint presentation ***curl-requests-foundations.pptx*** and start *slide show* mode.
    - I use animation to help deliver the topics in small chunks and much of the presentation will look like a mess if you don't navigate the animation in slide show mode.
    - The hands-on sections of the presentation list all of the cURL and Python commands you will need to follow along with each task and there are also screen recordings which demonstrate each task.
