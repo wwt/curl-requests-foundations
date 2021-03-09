@@ -34,14 +34,21 @@ get_url = f'https://sandboxdnac.cisco.com/dna/intent/api/v1/task/{task_id}'
 get_response = requests.get(get_url, headers=headers)
 print(f'{get_response.status_code} {get_response.reason}')
 print(get_response.json())
-
-# Step 6 - If DNAC returns a '200 OK' for the previous command, get the file contents
 file = get_response.json()['response']['progress']
-# DNAC returns a string object which looks like a dictionary so use regex to parse the file ID
+
+# Step 6 - # DNAC returns a string object which looks like a dictionary
+# Remediation option #1 - use the JSON module to convert the string to a dictionary
+import json
+file = get_response.json()['response']['progress']
+file_id_dict = json.loads(file)
+file_id = file_id_dict['fileId']
+# Remediation option #2 - use regex to parse the file ID
 import re
 search_pattern = re.compile(r'[a-f0-9-]+(?="})')
 match = search_pattern.search(file)
 file_id = match.group(0)
+
+# Step 7 - If DNAC returns a '200 OK' for the previous command, get the file contents
 get_url = f'https://sandboxdnac.cisco.com/dna/intent/api/v1/file/{file_id}'
 get_response = requests.get(get_url, headers=headers)
 print(f'{get_response.status_code} {get_response.reason}')
