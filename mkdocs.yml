@@ -1,45 +1,77 @@
-# Build Documentation with MkDocs
+---
+site_name: "WWT - cURL & Python Requests Foundations Hands-On"
+site_url: "https://wwt.github.io/curl-requests-foundations"
+nav:
+  - Home:
+    - cURL & Python Requests Hands-On Resources: index.md
+  - Section 1:
+    - Section 1: sections/section_1.md
+  - Section 2:
+    - Section 2: sections/section_2.md
+  - Section 3:
+    - Section 3: sections/section_3.md
 
-name: Build Documentation w/ MkDocs
+# Repository
+repo_name: "wwt/curl-requests-foundations"
+repo_url: "https://github.com/wwt/curl-requests-foundations"
+edit_uri: ""
 
-# Controls when the action will run.
-on:
-  # Triggers the workflow on push events but only for the main branch
-  push:
-    branches: [ main ]
+# Configuration
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: img/logo.svg
+  shortcuts:
+    help: 191    # ?
+    next: 78     # n
+    previous: 80 # p
+    search: 83   # s
+  plugins:
+    - search:
+        prebuild_index: true
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
 
-jobs:
-  build:
-    name: build and deploy
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          submodules: recursive
-
-      - name: Set up Python3
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - uses: actions/cache@v2
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Deploy
-        run: |
-          git pull
-          mkdocs gh-deploy

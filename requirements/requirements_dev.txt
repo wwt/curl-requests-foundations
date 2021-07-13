@@ -1,0 +1,6 @@
+# Development packages
+mkdocs
+
+# Python packages
+ipython
+requests
