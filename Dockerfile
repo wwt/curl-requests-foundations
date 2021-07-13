@@ -27,8 +27,8 @@ COPY requirements/ requirements/
 RUN python -m pip install --upgrade pip && \
     python -m pip install -r requirements/requirements.txt
 
-# Copy sample files files to Image
-COPY sample-files/ sample-files/
+# Copy resources folder to Image
+COPY resources/ resources/
 
 # Start the bash shell at container startup
 CMD ["/bin/sh"]
