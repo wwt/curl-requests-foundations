@@ -1,0 +1,15 @@
+*[ACI]: Application Centric Infrastructure
+*[API]: Application Programming Interface
+*[APIs]: Application Programming Interfaces
+*[CLI]: Command Line Interface
+*[DNA]: Digital Network Architecture
+*[HTTP]: Hypertext Transfer Protocol
+*[HTTPS]: Hypertext Transfer Protocol Secure
+*[IT]: Information Technology
+*[JSON]: JavaScript Object Notation
+*[REST]: Representational State Transfer
+*[SD-WAN]: Software-Defined Wide Area Network
+*[SSH]: Secure Shell
+*[UI]: User Interface
+*[XML]: eXtensible Markup Language
+*[YAML]: YAML Ain't Markup Language
