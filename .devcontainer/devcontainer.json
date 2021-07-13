@@ -16,7 +16,7 @@
     "forwardPorts": [
         8000
     ],
-    "postStartCommand": ["./requirements/server-launch.sh"],
+    "postAttachCommand": ["./requirements/server-launch.sh"],
     "settings": {
         "[yaml]": {
             "editor.insertSpaces": true,
