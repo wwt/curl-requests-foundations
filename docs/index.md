@@ -36,10 +36,10 @@ To use this repo:
 
    ```shell
    # Create and switch to a local directory
-   
+
    # macOS/Linux
    mkdir ~/code && cd ~/code
-   
+
    # Windows PowerShell
    mkdir ~/code; cd ~/code
    ```
@@ -78,7 +78,7 @@ To use this repo:
    ```shell
    # List your directories and locate the name of the Git repository folder
    ls -l
-   
+
    # Unless you specifically renamed the folder, this command will change you to the correct directory
    cd curl-requests-foundations
    ```
