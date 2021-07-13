@@ -15,7 +15,7 @@ EXPOSE 8000/TCP
 
 # Update repositories and install curl
 RUN apt-get update && \
-    apt-get -y install curl
+    apt-get -y install curl git
 
 # Create '/code' directory
 RUN mkdir /code
