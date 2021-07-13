@@ -1,8 +1,9 @@
-*[ACI]: Application Centric Infrastructure
+*[ACI]: Cisco Application Centric Infrastructure
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
 *[CLI]: Command Line Interface
-*[DNA]: Digital Network Architecture
+*[DNA]: Cisco Digital Network Architecture
+*[DNA]: Cisco DNA Center
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
 *[IT]: Information Technology
@@ -11,5 +12,7 @@
 *[SD-WAN]: Software-Defined Wide Area Network
 *[SSH]: Secure Shell
 *[UI]: User Interface
+*[URI]: Uniform Resource Identifier
+*[URL]: Uniform Resource Locator
 *[XML]: eXtensible Markup Language
 *[YAML]: YAML Ain't Markup Language
