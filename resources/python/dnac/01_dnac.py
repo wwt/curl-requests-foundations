@@ -22,7 +22,7 @@ print() # blank line between output
 pprint(get_response.json()['response'][0]) #display the first device in the response
 
 # Step 4 - Run a 'show version' command on a device
-cli_commands = {'name':'show ver','commands':['show ver'],'deviceUuids':['183ed3e6-3472-405c-a1ce-26d07987a140']}
+cli_commands = {'name':'show ver','commands':['show ver'],'deviceUuids':['f16955ae-c349-47e9-8e8f-9b62104ab604']}
 post_url = 'https://sandboxdnac.cisco.com/dna/intent/api/v1/network-device-poller/cli/read-request'
 post_response = requests.post(post_url, headers=headers, json=cli_commands)
 print(f'{post_response.status_code} {post_response.reason}')
