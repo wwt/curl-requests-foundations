@@ -23,7 +23,7 @@ Because the native response format for **cURL** is unstructured text[^2], **cURL
 
         ???+ note "Example cURL Command"
         
-            ```shell
+            ```bash
             curl https://jsonplaceholder.typicode.com/posts/1
             ```
 
@@ -31,7 +31,7 @@ Because the native response format for **cURL** is unstructured text[^2], **cURL
 
         ???+ done "Example Server Response"
         
-            ```shell
+            ```bash
             {
               "userId": 1,
               "id": 1,
