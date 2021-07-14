@@ -34,4 +34,4 @@ RUN python -m pip install --upgrade pip && \
 COPY resources/ resources/
 
 # Start the bash shell at container startup
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
