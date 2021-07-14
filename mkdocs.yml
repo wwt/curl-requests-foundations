@@ -4,12 +4,12 @@ site_url: "https://wwt.github.io/curl-requests-foundations"
 nav:
   - Home:
     - cURL & Python Requests Hands-On Resources: index.md
-  - Section 1:
-    - Section 1: sections/section_1.md
-  - Section 2:
-    - Section 2: sections/section_2.md
-  - Section 3:
-    - Section 3: sections/section_3.md
+  - cURL:
+    - REST API Access With cURL: sections/section_1.md
+  - Python Requests:
+    - REST API Access With Python Requests: sections/section_2.md
+  - Hands-On:
+    - Hands-On Exercises: sections/section_3.md
 
 # Repository
 repo_name: "wwt/curl-requests-foundations"
@@ -64,6 +64,7 @@ markdown_extensions:
   - abbr
   - admonition
   - attr_list
+  - footnotes
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:

@@ -12,7 +12,7 @@ ENV MERAKI_TOKEN="6bec40cf957de430a6f1f2baa056b99a4fac9ea0" \
 
 # Update repositories and install curl
 RUN apt-get update && \
-    apt-get -y install curl
+    apt-get -y install curl jq
 
 # Create '/code' directory
 RUN mkdir /code
@@ -31,4 +31,4 @@ RUN python -m pip install --upgrade pip && \
 COPY resources/ resources/
 
 # Start the bash shell at container startup
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]

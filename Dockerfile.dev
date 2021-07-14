@@ -15,7 +15,7 @@ EXPOSE 8000/TCP
 
 # Update repositories and install curl
 RUN apt-get update && \
-    apt-get -y install curl git
+    apt-get -y install curl jq git
 
 # Create '/code' directory
 RUN mkdir /code
@@ -34,4 +34,4 @@ RUN python -m pip install --upgrade pip && \
 COPY resources/ resources/
 
 # Start the bash shell at container startup
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
