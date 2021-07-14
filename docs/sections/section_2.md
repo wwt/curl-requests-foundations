@@ -2,7 +2,7 @@
 
 ## :fontawesome-brands-python: Python Requests
 
-[Python Requests](https://docs.python-requests.org/ "Python Requests Homepage"){target=_blank} is a third-party[^1] tool that allows you to write simple, human-readable REST API calls in Python.  Although the [Python Standard Library](https://docs.python.org/3/library/ "Python Standard Library"){target=_blank} contains a module which can make REST API calls[^2], [official Python documentation](https://docs.python.org/3/library/urllib.request.html#module-urllib.request "Python urllib.request Documentation"){target=_blank} recommends the use of the **Python Requests** module because of its higher-level, more consumable interface.
+[Python Requests](https://docs.python-requests.org/ "Python Requests Homepage"){target=_blank} is a third-party[^1] tool that allows you to write simple, human-readable REST API calls in Python.  Although the [Python Standard Library](https://docs.python.org/3/library/ "Python Standard Library"){target=_blank} contains a module that can make REST API calls[^2], [official Python documentation](https://docs.python.org/3/library/urllib.request.html#module-urllib.request "Python urllib.request Documentation"){target=_blank} recommends the use of the **Python Requests** module because of its higher-level, more consumable interface.
 
 **Python Requests** is an excellent tool for doing things like:
 
@@ -27,7 +27,7 @@ For the most part, only your imagination limits what you can do with REST APIs a
     1. You can paste this Python Requests code into a Python 3.x interpreter and press ++enter++ or ++"Return"++ to send the request:
 
         ???+ note "Example Python Requests Command"
-        
+
             ```python
             import requests
             req_url = 'https://jsonplaceholder.typicode.com/posts/1'
@@ -40,7 +40,7 @@ For the most part, only your imagination limits what you can do with REST APIs a
     2. The response from the server should look something like this:
 
         ???+ done "Example Server Response"
-        
+
             ```python
             200 OK
             {'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'body': 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'}
