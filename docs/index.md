@@ -8,7 +8,7 @@ What's the big fuss over IT automation?  Well, more than anything, the excitemen
 
 ## :fontawesome-solid-code: Overview
 
-This repository has a variety of hands-on, step-by-step exercies that will teach you to use [cURL](https://curl.se "cURL Homepage"){target=_blank} and [Python Requests](https://docs.python-requests.org/ "Python Requests Homepage"){target=_blank} to work with REST APIs. Even if you are new to cURL or Python Requests, this walkthrough will help you learn the syntax for both tools and get you comfortable with REST API calls to several Cisco platforms, including:
+This repository has a variety of hands-on, step-by-step exercises that will teach you to use [cURL](https://curl.se "cURL Homepage"){target=_blank} and [Python Requests](https://docs.python-requests.org/ "Python Requests Homepage"){target=_blank} to work with REST APIs. Even if you are new to cURL or Python Requests, this walkthrough will help you learn the syntax for both tools and get you comfortable with REST API calls to several Cisco platforms, including:
 
 - ACI
 - DNA Center
