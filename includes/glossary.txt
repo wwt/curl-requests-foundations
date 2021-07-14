@@ -6,9 +6,11 @@
 *[DNA]: Cisco DNA Center
 *[HTTP]: Hypertext Transfer Protocol
 *[HTTPS]: Hypertext Transfer Protocol Secure
+*[IDE]: Integrated Development Environment
 *[IT]: Information Technology
 *[JSON]: JavaScript Object Notation
 *[PyPI]: Python Package Index
+*[REPL]: Read Evaluate Print Loop
 *[REST]: Representational State Transfer
 *[SD-WAN]: Software-Defined Wide Area Network
 *[SSH]: Secure Shell
