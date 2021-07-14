@@ -13,7 +13,7 @@
 
 ### :fontawesome-solid-file-code: cURL In Action
 
-Because the native response format for **cURL** is unstructured text[^2], **cURL** typically is not part of programmatic workflows.  However, **cURL** has a wide variety of use cases and is an important part of your development skillset.
+Because the native response format for **cURL** is unstructured text[^2], **cURL** typically is not part of programmatic workflows.  However, **cURL** has a wide variety of use cases and is an essential part of your development skillset.
 
 ???+ example "cURL Example"
 
@@ -44,7 +44,7 @@ Because the native response format for **cURL** is unstructured text[^2], **cURL
 
 ### :material-cursor-text: cURL Command Option Reference
 
-**cURL** and a slew of configuration options and you can find a reference for some of the more common options below:
+**cURL** and a slew of configuration options, and you can find a reference for some of the more common options below:
 
 ???+ example "cURL Command Options"
     | Option                                         | Shorthand        | Purpose                                                                            |
@@ -67,7 +67,7 @@ Because the native response format for **cURL** is unstructured text[^2], **cURL
 
 ## :fontawesome-solid-check: Moving On
 
-You have the basics of **cURL** now and it's time to take a look at **Python Requests**.  Click [here](../section_2/ "Next Section") to move to the next section.
+You have the basics of **cURL** now, and it's time to take a look at **Python Requests**.  Click [here](../section_2/ "Next Section") to move to the next section.
 
 [^1]: **cURL** supports many more protocols than HTTP, and those protocols are beyond the scope of this repository.
 [^2]: Tools like [**JQ**](https://stedolan.github.io/jq/ "JQ Documentation"){target=_blank}, for example, can format JSON text into structured data.

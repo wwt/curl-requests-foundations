@@ -4,12 +4,12 @@
 
 [Python Requests](https://docs.python-requests.org/ "Python Requests Homepage"){target=_blank} is a third-party[^1] tool that allows you to write simple, human-readable REST API calls in Python.  Although the [Python Standard Library](https://docs.python.org/3/library/ "Python Standard Library"){target=_blank} contains a module which can make REST API calls[^2], [official Python documentation](https://docs.python.org/3/library/urllib.request.html#module-urllib.request "Python urllib.request Documentation"){target=_blank} recommends the use of the **Python Requests** module because of its higher-level, more consumable interface.
 
-**Python Requests** is a great tool for doing things like:
+**Python Requests** is an excellent tool for doing things like:
 
 - Obtaining configuration and state information from a variety of REST-based IT systems.
 - Sending configuration changes to different REST APIs.
 - Automatically managing HTTP session state.
-- Using simple keywords to automatically convert Python objects into HTTP/REST API-compatible formats.
+- Using simple keywords to convert Python objects into HTTP/REST API-compatible formats automatically.
 - Converting server response data into Python objects.
 - Managing HTTP exceptions.
 - Building REST API interactions into your automated workflows.
@@ -18,7 +18,7 @@
 
 ### :fontawesome-solid-file-code: Python Requests In Action
 
-For the most part, only your imagination limits what you can do with REST APIs and **Python Requests**.  Because of Python's programmatic flexibility, you can automate just about any task exposed by REST APIs.  Knowing how to use **Python Requests** is a skill that will help you automate simple and highly-complex workflows.
+For the most part, only your imagination limits what you can do with REST APIs and **Python Requests**.  Because of Python's programmatic flexibility, you can automate just about any task exposed by REST APIs.  Knowing how to use **Python Requests** is a skill that will help you automate both complex and straightforward workflows.
 
 ???+ example "Python Requests Example"
 
@@ -50,7 +50,7 @@ For the most part, only your imagination limits what you can do with REST APIs a
 
 ### :material-code-braces: Python Requests Parameters Reference
 
-**Python Requests** has many [parameters](https://docs.python-requests.org/en/latest/api/ "Python requests.request() Method Parameters") and you can find a reference for some of the more common parameters and keyword below:
+**Python Requests** has many [parameters](https://docs.python-requests.org/en/latest/api/ "Python requests.request() Method Parameters") and you can find a reference for some of the more common parameters and keywords below:
 
 ???+ example "Python Requests Parameters"
     | Parameter | Class                 | Description                                                                      |
