@@ -127,12 +127,12 @@ Follow these steps to setup the hands-on lab environment:
 
 ---
 
-   - Start the presentation in _slide show_ mode for a walkthrough experience.
-   - I use animation to help deliver the topics in small chunks, and much of the presentation will look like a mess if you don't navigate the animation in slide show mode.
-   - The hands-on sections of the presentation list all of the cURL and Python commands you need to follow along with each task, and there are also screen recordings that demonstrate each task.
-   - I include presenter notes on every slide, and if you have a second monitor, you can click through the slide show and read the script simultaneously.
+- Start the presentation in _slide show_ mode for a walkthrough experience.
+- I use animation to help deliver the topics in small chunks, and much of the presentation will look like a mess if you don't navigate the animation in slide show mode.
+- The hands-on sections of the presentation list all of the cURL and Python commands you need to follow along with each task, and there are also screen recordings that demonstrate each task.
+- I include presenter notes on every slide, and if you have a second monitor, you can click through the slide show and read the script simultaneously.
 
-   - \*\*Note - your terminal prompt will change to `/code#` to indicate the Container is active.
+- \*\*Note - your terminal prompt will change to `/code#` to indicate the Container is active.
 
 7. The Git repository includes subfolders that contain reference files and scripts for the hands-on portion of the slide show.
 
