@@ -25,7 +25,8 @@ COPY requirements/ requirements/
 
 # Install Python packages
 RUN python -m pip install --upgrade pip && \
-    python -m pip install -r requirements/requirements.txt
+    python -m pip install -r requirements/requirements.txt && \
+    rm -rf requirements
 
 # Copy resources folder to Image
 COPY resources/ resources/
