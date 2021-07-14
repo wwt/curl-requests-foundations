@@ -16,7 +16,7 @@
     
     
       
-        <title>Section 2 - WWT - cURL & Python Requests Foundations Hands-On</title>
+        <title>REST API Access With Python Requests - WWT - cURL & Python Requests Foundations Hands-On</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#section-2" class="md-skip">
+        <a href="#rest-api-access-with-python-requests" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Section 2
+              REST API Access With Python Requests
             
           </span>
         </div>
@@ -207,7 +207,7 @@
   
     <li class="md-tabs__item">
       <a href="../section_1/" class="md-tabs__link">
-        Section 1
+        cURL
       </a>
     </li>
   
@@ -225,7 +225,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        Section 2
+        Python Requests
       </a>
     </li>
   
@@ -241,7 +241,7 @@
   
     <li class="md-tabs__item">
       <a href="../section_3/" class="md-tabs__link">
-        Section 3
+        Hands-On
       </a>
     </li>
   
@@ -348,13 +348,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
-        Section 1
+        cURL
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 1" data-md-level="1">
+      <nav class="md-nav" aria-label="cURL" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Section 1
+          cURL
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -364,7 +364,7 @@
   
     <li class="md-nav__item">
       <a href="../section_1/" class="md-nav__link">
-        Section 1
+        REST API Access With cURL
       </a>
     </li>
   
@@ -392,13 +392,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Section 2
+        Python Requests
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 2" data-md-level="1">
+      <nav class="md-nav" aria-label="Python Requests" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Section 2
+          Python Requests
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -416,9 +416,73 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          REST API Access With Python Requests
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Section 2
+        REST API Access With Python Requests
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#python-requests" class="md-nav__link">
+     Python Requests
+  </a>
+  
+    <nav class="md-nav" aria-label=" Python Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-requests-in-action" class="md-nav__link">
+     Python Requests In Action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-requests-parameters-reference" class="md-nav__link">
+     Python Requests Parameters Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-requests-response-object-reference" class="md-nav__link">
+     Python Requests Response Object Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keep-rolling" class="md-nav__link">
+     Keep Rolling
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -444,13 +508,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
-        Section 3
+        Hands-On
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 3" data-md-level="1">
+      <nav class="md-nav" aria-label="Hands-On" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Section 3
+          Hands-On
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -460,7 +524,7 @@
   
     <li class="md-nav__item">
       <a href="../section_3/" class="md-nav__link">
-        Section 3
+        Hands-On Exercises
       </a>
     </li>
   
@@ -485,7 +549,194 @@
               
                 
                 
-                <h1 id="section-2">Section 2<a class="headerlink" href="#section-2" title="Permanent link">&para;</a></h1>
+                <h1 id="rest-api-access-with-python-requests"><abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Access With Python Requests<a class="headerlink" href="#rest-api-access-with-python-requests" title="Permanent link">&para;</a></h1>
+<h2 id="python-requests"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg></span> Python Requests<a class="headerlink" href="#python-requests" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.python-requests.org/" target="_blank" title="Python Requests Homepage">Python Requests</a> is a third-party<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> tool that allows you to write simple, human-readable <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> calls in Python.  Although the <a href="https://docs.python.org/3/library/" target="_blank" title="Python Standard Library">Python Standard Library</a> contains a module which can make <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> calls<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, <a href="https://docs.python.org/3/library/urllib.request.html#module-urllib.request" target="_blank" title="Python urllib.request Documentation">official Python documentation</a> recommends the use of the <strong>Python Requests</strong> module because of its higher-level, more consumable interface.</p>
+<p><strong>Python Requests</strong> is an excellent tool for doing things like:</p>
+<ul>
+<li>Obtaining configuration and state information from a variety of <abbr title="Representational State Transfer">REST</abbr>-based <abbr title="Information Technology">IT</abbr> systems.</li>
+<li>Sending configuration changes to different <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr>.</li>
+<li>Automatically managing <abbr title="Hypertext Transfer Protocol">HTTP</abbr> session state.</li>
+<li>Using simple keywords to convert Python objects into <abbr title="Hypertext Transfer Protocol">HTTP</abbr>/<abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr>-compatible formats automatically.</li>
+<li>Converting server response data into Python objects.</li>
+<li>Managing <abbr title="Hypertext Transfer Protocol">HTTP</abbr> exceptions.</li>
+<li>Building <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> interactions into your automated workflows.</li>
+</ul>
+<hr />
+<h3 id="python-requests-in-action"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zM123.206 400.505a5.4 5.4 0 0 1-7.633.246l-64.866-60.812a5.4 5.4 0 0 1 0-7.879l64.866-60.812a5.4 5.4 0 0 1 7.633.246l19.579 20.885a5.4 5.4 0 0 1-.372 7.747L101.65 336l40.763 35.874a5.4 5.4 0 0 1 .372 7.747l-19.579 20.884zm51.295 50.479-27.453-7.97a5.402 5.402 0 0 1-3.681-6.692l61.44-211.626a5.402 5.402 0 0 1 6.692-3.681l27.452 7.97a5.4 5.4 0 0 1 3.68 6.692l-61.44 211.626a5.397 5.397 0 0 1-6.69 3.681zm160.792-111.045-64.866 60.812a5.4 5.4 0 0 1-7.633-.246l-19.58-20.885a5.4 5.4 0 0 1 .372-7.747L284.35 336l-40.763-35.874a5.4 5.4 0 0 1-.372-7.747l19.58-20.885a5.4 5.4 0 0 1 7.633-.246l64.866 60.812a5.4 5.4 0 0 1-.001 7.879z"/></svg></span> Python Requests In Action<a class="headerlink" href="#python-requests-in-action" title="Permanent link">&para;</a></h3>
+<p>For the most part, only your imagination limits what you can do with <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr> and <strong>Python Requests</strong>.  Because of Python's programmatic flexibility, you can automate just about any task exposed by <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr>.  Knowing how to use <strong>Python Requests</strong> is a skill that will help you automate both complex and straightforward workflows.</p>
+<details class="example" open="open"><summary>Python Requests Example</summary><p>Here is a quick example of how <strong>Python Requests</strong> can make a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> call to a <a href="https://jsonplaceholder.typicode.com/" target="_blank" title="{JSON} Placeholder">free, public service</a> that provides a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> test platform:</p>
+<ol>
+<li>
+<p>You can paste this Python Requests code into a Python 3.x interpreter and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> to send the request:</p>
+<details class="note" open="open"><summary>Example Python Requests Command</summary><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">req_url</span> <span class="o">=</span> <span class="s1">&#39;https://jsonplaceholder.typicode.com/posts/1&#39;</span>
+<span class="n">req_headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span><span class="s1">&#39;application/json&#39;</span><span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">req_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">req_headers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>The response from the server should look something like this:</p>
+<details class="done" open="open"><summary>Example Server Response</summary><div class="highlight"><pre><span></span><code><span class="mi">200</span> <span class="n">OK</span>
+<span class="p">{</span><span class="s1">&#39;userId&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&#39;</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="s1">&#39;quia et suscipit</span><span class="se">\n</span><span class="s1">suscipit recusandae consequuntur expedita et cum</span><span class="se">\n</span><span class="s1">reprehenderit molestiae ut ut quas totam</span><span class="se">\n</span><span class="s1">nostrum rerum est autem sunt rem eveniet architecto&#39;</span><span class="p">}</span>
+</code></pre></div>
+</details>
+</li>
+</ol>
+</details>
+<hr />
+<h3 id="python-requests-parameters-reference"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2z"/></svg></span> Python Requests Parameters Reference<a class="headerlink" href="#python-requests-parameters-reference" title="Permanent link">&para;</a></h3>
+<p><strong>Python Requests</strong> has many <a href="https://docs.python-requests.org/en/latest/api/" title="Python requests.request() Method Parameters">parameters</a> and you can find a reference for some of the more common parameters and keywords below:</p>
+<details class="example" open="open"><summary>Python Requests Parameters</summary><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Class</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>method</code></td>
+<td align="left"><code>str</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> request method<sup id="fnref2:3"><a class="footnote-ref" href="#fn:3">3</a></sup> - <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code></td>
+</tr>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>str</code></td>
+<td align="left">Request <abbr title="Uniform Resource Locator">URL</abbr><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></td>
+</tr>
+<tr>
+<td align="left"><code>data</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left">Form-encoded <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request body, typically for <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> methods</td>
+</tr>
+<tr>
+<td align="left"><code>json</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left"><abbr title="JavaScript Object Notation">JSON</abbr>-encoded <abbr title="Hypertext Transfer Protocol">HTTP</abbr> request body, typically for <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> methods</td>
+</tr>
+<tr>
+<td align="left"><code>headers</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> client header(s) in key/value pairs - <code>{"Content": "application/json"}</code></td>
+</tr>
+<tr>
+<td align="left"><code>cookies</code></td>
+<td align="left"><code>dict</code> or <code>CookieJar</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> cookies in key/value pairs - <code>{"Session_Token": "1234567890"}</code></td>
+</tr>
+<tr>
+<td align="left"><code>auth</code></td>
+<td align="left"><code>tuple</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> Basic Auth credentials in a key/value pair - <code>("user_name", "password")</code></td>
+</tr>
+<tr>
+<td align="left"><code>timeout</code></td>
+<td align="left"><code>float</code> or <code>tuple</code></td>
+<td align="left">Number of seconds to wait for the server to respond to a request<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></td>
+</tr>
+<tr>
+<td align="left"><code>verify</code></td>
+<td align="left"><code>bool</code></td>
+<td align="left">Allow insecure or self-signed certificates (insecure <abbr title="Transport Layer Security">TLS</abbr>)<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="python-requests-response-object-reference"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2z"/></svg></span> Python Requests Response Object Reference<a class="headerlink" href="#python-requests-response-object-reference" title="Permanent link">&para;</a></h2>
+<p>The response from a <strong>Python Requests</strong> request is an <a href="https://docs.python-requests.org/en/latest/api/#requests.Response" title="Python requests.Response class Attributes and Methods">object</a> with many attributes and methods.  The data available in the <code>Response</code> object will help you understand whether or not your <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> call was successful and give you detailed information, often in a structured data format, that you can use programmatically.  You can find a reference for some of the more common attributes and methods below:</p>
+<details class="example" open="open"><summary>Python Requests Response Object Attributes &amp; Methods<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></summary><table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Return Object</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>cookies</code></td>
+<td align="left"><code>CookieJar</code></td>
+<td align="left">Cookies returned by the server</td>
+</tr>
+<tr>
+<td align="left"><code>headers</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left">Response headers from the server</td>
+</tr>
+<tr>
+<td align="left"><code>json()</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left"><abbr title="JavaScript Object Notation">JSON</abbr>-encoded response body from the server</td>
+</tr>
+<tr>
+<td align="left"><code>links</code></td>
+<td align="left"><code>dict</code></td>
+<td align="left">And links found within the response header from the server</td>
+</tr>
+<tr>
+<td align="left"><code>ok</code></td>
+<td align="left"><code>bool</code></td>
+<td align="left"><code>True</code> if the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> status code is &lt; <code>400</code>, <code>False</code> if the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> status code is &gt;= <code>400</code></td>
+</tr>
+<tr>
+<td align="left"><code>raise_for_status()</code></td>
+<td align="left"><code>HTTPError</code></td>
+<td align="left">Raise an <code>Exception</code> of the <code>HTTPError</code> type, if the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> status code is &gt;= <code>400</code></td>
+</tr>
+<tr>
+<td align="left"><code>reason</code></td>
+<td align="left"><code>str</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> reason text - <code>OK</code>, <code>Not Found</code>, <code>Bad Request</code>, etc.</td>
+</tr>
+<tr>
+<td align="left"><code>status_code</code></td>
+<td align="left"><code>str</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> status code - <code>200</code>, <code>404</code>, <code>400</code>, etc.</td>
+</tr>
+<tr>
+<td align="left"><code>text</code></td>
+<td align="left"><code>str</code></td>
+<td align="left">Unicode-encoded response body from the server</td>
+</tr>
+<tr>
+<td align="left"><code>url</code></td>
+<td align="left"><code>str</code></td>
+<td align="left">Final <abbr title="Uniform Resource Locator">URL</abbr> location of the server response, including redirects</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="keep-rolling"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m173.898 439.404-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span> Keep Rolling<a class="headerlink" href="#keep-rolling" title="Permanent link">&para;</a></h2>
+<p>You have all of the information you need to get started with the hands-on exercises.  Click <a href="../section_3/" title="Next Section">here</a> to move to the next section.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Installed with the <a href="https://pypi.org/project/requests2/" target="_blank" title="Python Requests on PyPI">Python pip Package Management Tool</a>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Python <a href="https://docs.python.org/3/library/urllib.html" target="_blank" title="Python urllib Module"><code>urllib</code> module</a>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Required parameter.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Default timeout is <strong>unlimited</strong> and, although not required, should be set.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Default is <code>True</code>.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>Any item in the table below with trailing <code>()</code> characters is a <code>method</code> and all other items are <code>attributes</code>.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -517,7 +768,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Section 1
+              REST API Access With cURL
             </div>
           </div>
         </a>
@@ -529,7 +780,7 @@
               <span class="md-footer__direction">
                 Next
               </span>
-              Section 3
+              Hands-On Exercises
             </div>
           </div>
           <div class="md-footer__button md-icon">

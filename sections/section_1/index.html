@@ -16,7 +16,7 @@
     
     
       
-        <title>Section 1 - WWT - cURL & Python Requests Foundations Hands-On</title>
+        <title>REST API Access With cURL - WWT - cURL & Python Requests Foundations Hands-On</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#section-1" class="md-skip">
+        <a href="#rest-api-access-with-curl" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Section 1
+              REST API Access With cURL
             
           </span>
         </div>
@@ -209,7 +209,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        Section 1
+        cURL
       </a>
     </li>
   
@@ -225,7 +225,7 @@
   
     <li class="md-tabs__item">
       <a href="../section_2/" class="md-tabs__link">
-        Section 2
+        Python Requests
       </a>
     </li>
   
@@ -241,7 +241,7 @@
   
     <li class="md-tabs__item">
       <a href="../section_3/" class="md-tabs__link">
-        Section 3
+        Hands-On
       </a>
     </li>
   
@@ -350,13 +350,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
-        Section 1
+        cURL
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 1" data-md-level="1">
+      <nav class="md-nav" aria-label="cURL" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Section 1
+          cURL
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -374,9 +374,66 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          REST API Access With cURL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Section 1
+        REST API Access With cURL
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#curl-overview" class="md-nav__link">
+     cURL Overview
+  </a>
+  
+    <nav class="md-nav" aria-label=" cURL Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#curl-in-action" class="md-nav__link">
+     cURL In Action
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curl-command-option-reference" class="md-nav__link">
+     cURL Command Option Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-on" class="md-nav__link">
+     Moving On
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -402,13 +459,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        Section 2
+        Python Requests
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 2" data-md-level="1">
+      <nav class="md-nav" aria-label="Python Requests" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Section 2
+          Python Requests
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -418,7 +475,7 @@
   
     <li class="md-nav__item">
       <a href="../section_2/" class="md-nav__link">
-        Section 2
+        REST API Access With Python Requests
       </a>
     </li>
   
@@ -444,13 +501,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
-        Section 3
+        Hands-On
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Section 3" data-md-level="1">
+      <nav class="md-nav" aria-label="Hands-On" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Section 3
+          Hands-On
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -460,7 +517,7 @@
   
     <li class="md-nav__item">
       <a href="../section_3/" class="md-nav__link">
-        Section 3
+        Hands-On Exercises
       </a>
     </li>
   
@@ -485,7 +542,136 @@
               
                 
                 
-                <h1 id="section-1">Section 1<a class="headerlink" href="#section-1" title="Permanent link">&para;</a></h1>
+                <h1 id="rest-api-access-with-curl"><abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Access With cURL<a class="headerlink" href="#rest-api-access-with-curl" title="Permanent link">&para;</a></h1>
+<h2 id="curl-overview"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9h2.31l.32-3h2l-.32 3h2l.32-3h2l-.32 3H15v2h-1.9l-.2 2H15v2h-2.31l-.32 3h-2l.32-3h-2l-.32 3h-2l.32-3H5v-2h1.9l.2-2H5V9m4.1 2-.2 2h2l.2-2M19 6h-2v8h2m0 2h-2v2h2z"/></svg></span> cURL Overview<a class="headerlink" href="#curl-overview" title="Permanent link">&para;</a></h2>
+<p><a href="https://curl.se" target="_blank" title="cURL Homepage">cURL</a> is an open-source Linux tool that allows your <abbr title="Command Line Interface">CLI</abbr> to act as an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> client<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>  Think of <strong>cURL</strong> sort of like a text-based web browser that you can use to do things like:</p>
+<ul>
+<li>Test and troubleshoot <abbr title="Hypertext Transfer Protocol">HTTP</abbr> connectivity to a server.</li>
+<li>Interact with <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr>.</li>
+<li>Download or upload files.</li>
+<li>Test certificate validity.</li>
+</ul>
+<hr />
+<h3 id="curl-in-action"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zM123.206 400.505a5.4 5.4 0 0 1-7.633.246l-64.866-60.812a5.4 5.4 0 0 1 0-7.879l64.866-60.812a5.4 5.4 0 0 1 7.633.246l19.579 20.885a5.4 5.4 0 0 1-.372 7.747L101.65 336l40.763 35.874a5.4 5.4 0 0 1 .372 7.747l-19.579 20.884zm51.295 50.479-27.453-7.97a5.402 5.402 0 0 1-3.681-6.692l61.44-211.626a5.402 5.402 0 0 1 6.692-3.681l27.452 7.97a5.4 5.4 0 0 1 3.68 6.692l-61.44 211.626a5.397 5.397 0 0 1-6.69 3.681zm160.792-111.045-64.866 60.812a5.4 5.4 0 0 1-7.633-.246l-19.58-20.885a5.4 5.4 0 0 1 .372-7.747L284.35 336l-40.763-35.874a5.4 5.4 0 0 1-.372-7.747l19.58-20.885a5.4 5.4 0 0 1 7.633-.246l64.866 60.812a5.4 5.4 0 0 1-.001 7.879z"/></svg></span> cURL In Action<a class="headerlink" href="#curl-in-action" title="Permanent link">&para;</a></h3>
+<p>Because the native response format for <strong>cURL</strong> is unstructured text<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, <strong>cURL</strong> typically is not part of programmatic workflows.  However, <strong>cURL</strong> has a wide variety of use cases and is an essential part of your development skillset.</p>
+<details class="example" open="open"><summary>cURL Example</summary><p>Here is a quick example of how <strong>cURL</strong> can make a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> call to a <a href="https://jsonplaceholder.typicode.com/" target="_blank" title="{JSON} Placeholder">free, public service</a> that provides a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> test platform:</p>
+<ol>
+<li>
+<p>You can paste this cURL command in just about any Linux environment and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> to send the request:</p>
+<details class="note" open="open"><summary>Example cURL Command</summary><div class="highlight"><pre><span></span><code>curl https://jsonplaceholder.typicode.com/posts/1
+</code></pre></div>
+</details>
+</li>
+<li>
+<p>The response from the server should look something like this:</p>
+<details class="done" open="open"><summary>Example Server Response</summary><div class="highlight"><pre><span></span><code><span class="o">{</span>
+  <span class="s2">&quot;userId&quot;</span>: <span class="m">1</span>,
+  <span class="s2">&quot;id&quot;</span>: <span class="m">1</span>,
+  <span class="s2">&quot;title&quot;</span>: <span class="s2">&quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;</span>,
+  <span class="s2">&quot;body&quot;</span>: <span class="s2">&quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+</details>
+</li>
+</ol>
+</details>
+<hr />
+<h3 id="curl-command-option-reference"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19a1 1 0 0 0 1 1h2v2h-2.5c-.55 0-1.5-.45-1.5-1 0 .55-.95 1-1.5 1H8v-2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8V2h2.5c.55 0 1.5.45 1.5 1 0-.55.95-1 1.5-1H16v2h-2a1 1 0 0 0-1 1v14z"/></svg></span> cURL Command Option Reference<a class="headerlink" href="#curl-command-option-reference" title="Permanent link">&para;</a></h3>
+<p><strong>cURL</strong> and a slew of configuration options, and you can find a reference for some of the more common options below:</p>
+<details class="example" open="open"><summary>cURL Command Options</summary><table>
+<thead>
+<tr>
+<th align="left">Option</th>
+<th align="left">Shorthand</th>
+<th align="left">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>--request</code></td>
+<td align="left"><code>-X</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> request method - <code>GET</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code></td>
+</tr>
+<tr>
+<td align="left"><code>--header</code></td>
+<td align="left"><code>-H</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> client header(s) in key/value pairs - <code>"Content:application/json"</code></td>
+</tr>
+<tr>
+<td align="left"><code>--url &lt;url&gt;</code></td>
+<td align="left">N/A</td>
+<td align="left">Request <abbr title="Uniform Resource Locator">URL</abbr></td>
+</tr>
+<tr>
+<td align="left"><code>--cookie-jar &lt;file_name&gt;</code></td>
+<td align="left"><code>c</code></td>
+<td align="left">Write session cookies to a local file</td>
+</tr>
+<tr>
+<td align="left"><code>--cookie &lt;file_name&gt;</code></td>
+<td align="left"><code>-b</code></td>
+<td align="left">Send session cookies stored in a local file</td>
+</tr>
+<tr>
+<td align="left"><code>--data</code>, <code>--data-raw</code>, and <code>--data-urlencode</code></td>
+<td align="left"><code>-d</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> request body, typically for <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> methods</td>
+</tr>
+<tr>
+<td align="left"><code>--include</code></td>
+<td align="left"><code>-i</code></td>
+<td align="left">Display the response headers and response body in STDOUT</td>
+</tr>
+<tr>
+<td align="left"><code>--head</code></td>
+<td align="left"><code>-I</code></td>
+<td align="left">Display ONLY the response headers in STDOUT</td>
+</tr>
+<tr>
+<td align="left"><code>--insecure</code></td>
+<td align="left"><code>-k</code></td>
+<td align="left">Allow insecure or self-signed certificates (insecure <abbr title="Transport Layer Security">TLS</abbr>)</td>
+</tr>
+<tr>
+<td align="left"><code>--location</code></td>
+<td align="left"><code>-L</code></td>
+<td align="left">Follow <abbr title="Hypertext Transfer Protocol">HTTP</abbr> 3XX redirect server responses</td>
+</tr>
+<tr>
+<td align="left"><code>--output &lt;file_name&gt;</code></td>
+<td align="left"><code>-o &lt;file_name&gt;</code></td>
+<td align="left">Write response to a file, instead of STDOUT</td>
+</tr>
+<tr>
+<td align="left"><code>--user</code></td>
+<td align="left"><code>-u</code></td>
+<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> Basic Auth credentials in a key/value pair - <code>"user_name:password"</code></td>
+</tr>
+<tr>
+<td align="left"><code>--verbose</code></td>
+<td align="left"><code>-v</code></td>
+<td align="left">Display detailed info for debugging (headers, <abbr title="Transport Layer Security">TLS</abbr> handshake messages, etc.)</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr />
+<h2 id="moving-on"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m173.898 439.404-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg></span> Moving On<a class="headerlink" href="#moving-on" title="Permanent link">&para;</a></h2>
+<p>You have the basics of <strong>cURL</strong> now, and it's time to take a look at <strong>Python Requests</strong>.  Click <a href="../section_2/" title="Next Section">here</a> to move to the next section.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><strong>cURL</strong> supports many more protocols than <abbr title="Hypertext Transfer Protocol">HTTP</abbr>, and those protocols are beyond the scope of this repository.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Tools like <a href="https://stedolan.github.io/jq/" target="_blank" title="JQ Documentation"><strong>JQ</strong></a>, for example, can format <abbr title="JavaScript Object Notation">JSON</abbr> text into structured data.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Default, when omitted.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -529,7 +715,7 @@
               <span class="md-footer__direction">
                 Next
               </span>
-              Section 2
+              REST API Access With Python Requests
             </div>
           </div>
           <div class="md-footer__button md-icon">
