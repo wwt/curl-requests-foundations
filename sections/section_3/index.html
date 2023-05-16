@@ -594,10 +594,10 @@
 <ol>
 <li><strong>cURL</strong> Introduction.</li>
 <li><strong>Python Requests</strong> Introduction.</li>
-<li><abbr title="Cisco Application Centric Infrastructure">ACI</abbr><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>ACI<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 <li>DNAC<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 <li>Meraki<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
-<li>vManage <abbr title="Software-Defined Wide Area Network">SD-WAN</abbr><sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>vManage SD-WAN<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 <li>Webex<sup id="fnref5:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ol>
 <hr />
@@ -612,7 +612,7 @@
 </ul>
 </li>
 <li>
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.858.858 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> An <abbr title="Integrated Development Environment">IDE</abbr> tool<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.858.858 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> An IDE tool<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
 <ul>
 <li>We recommend <a href="https://code.visualstudio.com/Download" target="_blank" title="Visual Studio Code Download">Visual Studio Code</a>.</li>
 </ul>
@@ -642,8 +642,8 @@
 <details class="todo" open="open"><summary>Step 1</summary><ol>
 <li>
 <p>Copy the following command to your clipboard.</p>
-<div class="highlight"><pre><span></span><code>docker run -it --name curl-pyreq1 wwt01/curl-pyreq
-</code></pre></div>
+<p><code>bash
+docker run -it --name curl-pyreq1 wwt01/curl-pyreq</code>        </p>
 </li>
 <li>
 <p>Open a terminal shell on the same system as your Docker runtime environment.</p>
@@ -656,8 +656,8 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You will know your Container is active and ready for use when your terminal prompt changes to something like this:</p>
-<div class="highlight"><pre><span></span><code>root@da343f292e5a:/code#
-</code></pre></div>
+<p><code>bash
+root@da343f292e5a:/code#</code></p>
 <p><a href="../../images/docker_container/3_docker_container_prompt.png" target="_blank"><img alt="3_docker_container_prompt" src="../../images/docker_container/3_docker_container_prompt.png" title="Docker Container Prompt" /></a></p>
 </div>
 <details class="help"><summary>Docker Command Details</summary><p>The Docker Command performs the following actions:</p>
@@ -691,7 +691,7 @@
 <li>
 <p>Enter the <strong>cURL</strong> command examples in your Container prompt.</p>
 </li>
-<li>Use the Container's Python <abbr title="Read Evaluate Print Loop">REPL</abbr> to enter the <strong>Python Request</strong> code examples.</li>
+<li>Use the Container's Python REPL to enter the <strong>Python Request</strong> code examples.</li>
 </ol>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -705,21 +705,21 @@
 <ul>
 <li>Restart an existing lab environment Container (restores previous lab progress):</li>
 </ul>
-<div class="highlight"><pre><span></span><code>docker start curl-pyreq1
-</code></pre></div>
+<p><code>bash
+docker start curl-pyreq1</code></p>
 <ul>
 <li>Delete an existing lab environment Container (removes previous lab progress):</li>
 </ul>
-<div class="highlight"><pre><span></span><code>docker stop curl-pyreq1
-docker rm curl-pyreq1
-</code></pre></div>
+<p><code>bash
+docker stop curl-pyreq1
+docker rm curl-pyreq1</code></p>
 <ul>
 <li>Remove the Docker Image:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>docker stop curl-pyreq1
+<p><code>bash
+docker stop curl-pyreq1
 docker rm curl-pyreq1
-docker rmi wwt01/curl-pyreq
-</code></pre></div>
+docker rmi wwt01/curl-pyreq</code></p>
 </details>
 </details>
 <hr />
@@ -733,10 +733,10 @@ docker rmi wwt01/curl-pyreq
 </ul>
 </li>
 <li>
-<p>The Git repository includes a <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources" target="_blank" title="resources Folder">resources</a> directory where you can find subdirectories, organized by topic and <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> platform.</p>
+<p>The Git repository includes a <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources" target="_blank" title="resources Folder">resources</a> directory where you can find subdirectories, organized by topic and REST API platform.</p>
 <ul>
 <li>All of the shell scripts and Python code in the PowerPoint slides, are in <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/curl" target="_blank" title="curl Folder">curl</a> and <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/python" target="_blank" title="python Folder">python</a> subdirectories.</li>
-<li>Both the <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/curl" target="_blank" title="curl Folder">curl</a> and <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/python" target="_blank" title="python Folder">python</a> directories contain subdirectories for each section of the presentation (examples, <abbr title="Cisco Application Centric Infrastructure">ACI</abbr>, DNAC, etc.).</li>
+<li>Both the <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/curl" target="_blank" title="curl Folder">curl</a> and <a href="https://github.com/wwt/curl-requests-foundations/tree/main/resources/python" target="_blank" title="python Folder">python</a> directories contain subdirectories for each section of the presentation (examples, ACI, DNAC, etc.).</li>
 <li>Keep the Git repository open in a browser window if you want a quick reference for any of the <strong>cURL</strong> commands or <strong>Python Requests</strong> code.</li>
 </ul>
 </li>
@@ -755,10 +755,10 @@ docker rmi wwt01/curl-pyreq
 <hr />
 <ol>
 <li id="fn:1">
-<p>Includes the following sub-sections: Platform-Specific <abbr title="Application Programming Interface">API</abbr> Overview, <strong>cURL</strong> <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> exercises, and <strong>Python Requests</strong> <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> exercises.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Includes the following sub-sections: Platform-Specific API Overview, <strong>cURL</strong> REST API exercises, and <strong>Python Requests</strong> REST API exercises.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Optional. You may use the Python <abbr title="Read Evaluate Print Loop">REPL</abbr> in the Docker Container to enter the <strong>Python Requests</strong> code examples.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Optional. You may use the Python REPL in the Docker Container to enter the <strong>Python Requests</strong> code examples.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

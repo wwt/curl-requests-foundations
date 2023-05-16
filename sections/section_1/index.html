@@ -587,35 +587,35 @@
               
                 
                 
-                <h1 id="rest-api-access-with-curl"><abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> Access With cURL<a class="headerlink" href="#rest-api-access-with-curl" title="Permanent link">&para;</a></h1>
+                <h1 id="rest-api-access-with-curl">REST API Access With cURL<a class="headerlink" href="#rest-api-access-with-curl" title="Permanent link">&para;</a></h1>
 <h2 id="curl-overview"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9h2.31l.32-3h2l-.32 3h2l.32-3h2l-.32 3H15v2h-1.9l-.2 2H15v2h-2.31l-.32 3h-2l.32-3h-2l-.32 3h-2l.32-3H5v-2h1.9l.2-2H5V9m4.1 2-.2 2h2l.2-2M19 6h-2v8h2m0 2h-2v2h2z"/></svg></span> cURL Overview<a class="headerlink" href="#curl-overview" title="Permanent link">&para;</a></h2>
-<p><a href="https://curl.se" target="_blank" title="cURL Homepage">cURL</a> is an open-source Linux tool that allows your <abbr title="Command Line Interface">CLI</abbr> to act as an <abbr title="Hypertext Transfer Protocol">HTTP</abbr> client<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>  Think of <strong>cURL</strong> sort of like a text-based web browser that you can use to do things like:</p>
+<p><a href="https://curl.se" target="_blank" title="cURL Homepage">cURL</a> is an open-source Linux tool that allows your CLI to act as an HTTP client<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>  Think of <strong>cURL</strong> sort of like a text-based web browser that you can use to do things like:</p>
 <ul>
-<li>Test and troubleshoot <abbr title="Hypertext Transfer Protocol">HTTP</abbr> connectivity to a server.</li>
-<li>Interact with <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interfaces">APIs</abbr>.</li>
+<li>Test and troubleshoot HTTP connectivity to a server.</li>
+<li>Interact with REST APIs.</li>
 <li>Download or upload files.</li>
 <li>Test certificate validity.</li>
 </ul>
 <hr />
 <h3 id="curl-in-action"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 121.941V128H256V0h6.059c6.365 0 12.47 2.529 16.971 7.029l97.941 97.941A24.005 24.005 0 0 1 384 121.941zM248 160c-13.2 0-24-10.8-24-24V0H24C10.745 0 0 10.745 0 24v464c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V160H248zM123.206 400.505a5.4 5.4 0 0 1-7.633.246l-64.866-60.812a5.4 5.4 0 0 1 0-7.879l64.866-60.812a5.4 5.4 0 0 1 7.633.246l19.579 20.885a5.4 5.4 0 0 1-.372 7.747L101.65 336l40.763 35.874a5.4 5.4 0 0 1 .372 7.747l-19.579 20.884zm51.295 50.479-27.453-7.97a5.402 5.402 0 0 1-3.681-6.692l61.44-211.626a5.402 5.402 0 0 1 6.692-3.681l27.452 7.97a5.4 5.4 0 0 1 3.68 6.692l-61.44 211.626a5.397 5.397 0 0 1-6.69 3.681zm160.792-111.045-64.866 60.812a5.4 5.4 0 0 1-7.633-.246l-19.58-20.885a5.4 5.4 0 0 1 .372-7.747L284.35 336l-40.763-35.874a5.4 5.4 0 0 1-.372-7.747l19.58-20.885a5.4 5.4 0 0 1 7.633-.246l64.866 60.812a5.4 5.4 0 0 1-.001 7.879z"/></svg></span> cURL In Action<a class="headerlink" href="#curl-in-action" title="Permanent link">&para;</a></h3>
 <p>Because the native response format for <strong>cURL</strong> is unstructured text<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, <strong>cURL</strong> typically is not part of programmatic workflows.  However, <strong>cURL</strong> has a wide variety of use cases and is an essential part of your development skillset.</p>
-<details class="example" open="open"><summary>cURL Example</summary><p>Here is a quick example of how <strong>cURL</strong> can make a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> call to a <a href="https://jsonplaceholder.typicode.com/" target="_blank" title="{JSON} Placeholder">free, public service</a> that provides a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> test platform:</p>
+<details class="example" open="open"><summary>cURL Example</summary><p>Here is a quick example of how <strong>cURL</strong> can make a REST API call to a <a href="https://jsonplaceholder.typicode.com/" target="_blank" title="{JSON} Placeholder">free, public service</a> that provides a REST API test platform:</p>
 <ol>
 <li>
 <p>You can paste this cURL command in just about any Linux environment and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> to send the request:</p>
-<details class="note" open="open"><summary>Example cURL Command</summary><div class="highlight"><pre><span></span><code>curl https://jsonplaceholder.typicode.com/posts/1
-</code></pre></div>
+<details class="note" open="open"><summary>Example cURL Command</summary><p><code>bash
+curl https://jsonplaceholder.typicode.com/posts/1</code></p>
 </details>
 </li>
 <li>
 <p>The response from the server should look something like this:</p>
-<details class="done" open="open"><summary>Example Server Response</summary><div class="highlight"><pre><span></span><code><span class="o">{</span>
-  <span class="s2">&quot;userId&quot;</span>: <span class="m">1</span>,
-  <span class="s2">&quot;id&quot;</span>: <span class="m">1</span>,
-  <span class="s2">&quot;title&quot;</span>: <span class="s2">&quot;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&quot;</span>,
-  <span class="s2">&quot;body&quot;</span>: <span class="s2">&quot;quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto&quot;</span>
-<span class="o">}</span>
-</code></pre></div>
+<details class="done" open="open"><summary>Example Server Response</summary><p><code>bash
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</code></p>
 </details>
 </li>
 </ol>
@@ -635,17 +635,17 @@
 <tr>
 <td align="left"><code>--request</code></td>
 <td align="left"><code>-X</code></td>
-<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> request method - <code>GET</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code></td>
+<td align="left">HTTP request method - <code>GET</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, <code>POST</code>, <code>PUT</code>, <code>PATCH</code>, <code>DELETE</code></td>
 </tr>
 <tr>
 <td align="left"><code>--header</code></td>
 <td align="left"><code>-H</code></td>
-<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> client header(s) in key/value pairs - <code>"Content:application/json"</code></td>
+<td align="left">HTTP client header(s) in key/value pairs - <code>"Content:application/json"</code></td>
 </tr>
 <tr>
 <td align="left"><code>--url &lt;url&gt;</code></td>
 <td align="left">N/A</td>
-<td align="left">Request <abbr title="Uniform Resource Locator">URL</abbr></td>
+<td align="left">Request URL</td>
 </tr>
 <tr>
 <td align="left"><code>--cookie-jar &lt;file_name&gt;</code></td>
@@ -660,7 +660,7 @@
 <tr>
 <td align="left"><code>--data</code>, <code>--data-raw</code>, and <code>--data-urlencode</code></td>
 <td align="left"><code>-d</code></td>
-<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> request body, typically for <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> methods</td>
+<td align="left">HTTP request body, typically for <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> methods</td>
 </tr>
 <tr>
 <td align="left"><code>--include</code></td>
@@ -675,12 +675,12 @@
 <tr>
 <td align="left"><code>--insecure</code></td>
 <td align="left"><code>-k</code></td>
-<td align="left">Allow insecure or self-signed certificates (insecure <abbr title="Transport Layer Security">TLS</abbr>)</td>
+<td align="left">Allow insecure or self-signed certificates (insecure TLS)</td>
 </tr>
 <tr>
 <td align="left"><code>--location</code></td>
 <td align="left"><code>-L</code></td>
-<td align="left">Follow <abbr title="Hypertext Transfer Protocol">HTTP</abbr> 3XX redirect server responses</td>
+<td align="left">Follow HTTP 3XX redirect server responses</td>
 </tr>
 <tr>
 <td align="left"><code>--output &lt;file_name&gt;</code></td>
@@ -690,12 +690,12 @@
 <tr>
 <td align="left"><code>--user</code></td>
 <td align="left"><code>-u</code></td>
-<td align="left"><abbr title="Hypertext Transfer Protocol">HTTP</abbr> Basic Auth credentials in a key/value pair - <code>"user_name:password"</code></td>
+<td align="left">HTTP Basic Auth credentials in a key/value pair - <code>"user_name:password"</code></td>
 </tr>
 <tr>
 <td align="left"><code>--verbose</code></td>
 <td align="left"><code>-v</code></td>
-<td align="left">Display detailed info for debugging (headers, <abbr title="Transport Layer Security">TLS</abbr> handshake messages, etc.)</td>
+<td align="left">Display detailed info for debugging (headers, TLS handshake messages, etc.)</td>
 </tr>
 </tbody>
 </table>
@@ -707,10 +707,10 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p><strong>cURL</strong> supports many more protocols than <abbr title="Hypertext Transfer Protocol">HTTP</abbr>, and those protocols are beyond the scope of this repository.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p><strong>cURL</strong> supports many more protocols than HTTP, and those protocols are beyond the scope of this repository.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Tools like <a href="https://stedolan.github.io/jq/" target="_blank" title="JQ Documentation"><strong>JQ</strong></a>, for example, can format <abbr title="JavaScript Object Notation">JSON</abbr> text into structured data.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Tools like <a href="https://stedolan.github.io/jq/" target="_blank" title="JQ Documentation"><strong>JQ</strong></a>, for example, can format JSON text into structured data.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>Default, when omitted.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
