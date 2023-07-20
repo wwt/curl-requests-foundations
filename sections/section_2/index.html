@@ -614,20 +614,20 @@
 <ol>
 <li>
 <p>You can paste this Python Requests code into a Python 3.x interpreter and press <span class="keys"><kbd class="key-enter">Enter</kbd></span> or <span class="keys"><kbd>Return</kbd></span> to send the request:</p>
-<details class="note" open="open"><summary>Example Python Requests Command</summary><p><code>python
-import requests
-req_url = 'https://jsonplaceholder.typicode.com/posts/1'
-req_headers = {'Content-Type':'application/json'}
-response = requests.get(req_url, headers=req_headers)
-print(f'{response.status_code} {response.reason}')
-print(response.json())</code></p>
+<details class="note" open="open"><summary>Example Python Requests Command</summary><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">req_url</span> <span class="o">=</span> <span class="s1">&#39;https://jsonplaceholder.typicode.com/posts/1&#39;</span>
+<span class="n">req_headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span><span class="p">:</span><span class="s1">&#39;application/json&#39;</span><span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">req_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">req_headers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</code></pre></div>
 </details>
 </li>
 <li>
 <p>The response from the server should look something like this:</p>
-<details class="done" open="open"><summary>Example Server Response</summary><p><code>python
-200 OK
-{'userId': 1, 'id': 1, 'title': 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 'body': 'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto'}</code></p>
+<details class="done" open="open"><summary>Example Server Response</summary><div class="highlight"><pre><span></span><code><span class="mi">200</span> <span class="n">OK</span>
+<span class="p">{</span><span class="s1">&#39;userId&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="s1">&#39;sunt aut facere repellat provident occaecati excepturi optio reprehenderit&#39;</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="s1">&#39;quia et suscipit</span><span class="se">\n</span><span class="s1">suscipit recusandae consequuntur expedita et cum</span><span class="se">\n</span><span class="s1">reprehenderit molestiae ut ut quas totam</span><span class="se">\n</span><span class="s1">nostrum rerum est autem sunt rem eveniet architecto&#39;</span><span class="p">}</span>
+</code></pre></div>
 </details>
 </li>
 </ol>

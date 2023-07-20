@@ -642,8 +642,8 @@
 <details class="todo" open="open"><summary>Step 1</summary><ol>
 <li>
 <p>Copy the following command to your clipboard.</p>
-<p><code>bash
-docker run -it --name curl-pyreq1 wwt01/curl-pyreq</code>        </p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--name<span class="w"> </span>curl-pyreq1<span class="w"> </span>wwt01/curl-pyreq
+</code></pre></div>
 </li>
 <li>
 <p>Open a terminal shell on the same system as your Docker runtime environment.</p>
@@ -656,8 +656,8 @@ docker run -it --name curl-pyreq1 wwt01/curl-pyreq</code>        </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You will know your Container is active and ready for use when your terminal prompt changes to something like this:</p>
-<p><code>bash
-root@da343f292e5a:/code#</code></p>
+<div class="highlight"><pre><span></span><code>root@da343f292e5a:/code#
+</code></pre></div>
 <p><a href="../../images/docker_container/3_docker_container_prompt.png" target="_blank"><img alt="3_docker_container_prompt" src="../../images/docker_container/3_docker_container_prompt.png" title="Docker Container Prompt" /></a></p>
 </div>
 <details class="help"><summary>Docker Command Details</summary><p>The Docker Command performs the following actions:</p>
@@ -705,21 +705,21 @@ root@da343f292e5a:/code#</code></p>
 <ul>
 <li>Restart an existing lab environment Container (restores previous lab progress):</li>
 </ul>
-<p><code>bash
-docker start curl-pyreq1</code></p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>start<span class="w"> </span>curl-pyreq1
+</code></pre></div>
 <ul>
 <li>Delete an existing lab environment Container (removes previous lab progress):</li>
 </ul>
-<p><code>bash
-docker stop curl-pyreq1
-docker rm curl-pyreq1</code></p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span>curl-pyreq1
+docker<span class="w"> </span>rm<span class="w"> </span>curl-pyreq1
+</code></pre></div>
 <ul>
 <li>Remove the Docker Image:</li>
 </ul>
-<p><code>bash
-docker stop curl-pyreq1
-docker rm curl-pyreq1
-docker rmi wwt01/curl-pyreq</code></p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>stop<span class="w"> </span>curl-pyreq1
+docker<span class="w"> </span>rm<span class="w"> </span>curl-pyreq1
+docker<span class="w"> </span>rmi<span class="w"> </span>wwt01/curl-pyreq
+</code></pre></div>
 </details>
 </details>
 <hr />
